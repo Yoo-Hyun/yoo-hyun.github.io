@@ -21,6 +21,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 h1,h2,h3,p,ul{
@@ -46,3 +47,49 @@ button {
 button:focus {
   outline: 1px solid var(--color-accent);
 }
+
+/* header */
+.header {
+  background-color: #050a13;
+  position:fixed;
+  top:0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.haeder__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.haeder__logo__img {
+  width: 36px;
+  height: 36px;
+}
+
+.haeder__logo__title{
+  font-size: 1.8rem;
+}
+
+.header__meun {
+  display: flex;
+  gap: 4px;
+}
+
+.header__meun__item {
+  padding: 8px 16px;
+}
+
+.header__meun__item:hover {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.header__meun__item.active {
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+}
+
