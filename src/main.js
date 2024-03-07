@@ -25,3 +25,17 @@ document.addEventListener('scroll', ()=>{
     arrowup.style.opacity = 0;
   } 
 });
+
+
+// Navbar 토글버튼 클릭 처리
+const navberMenu = document.querySelector('.header__menu');
+const navberToggle = document.querySelector('.header__toggle');
+navberToggle.addEventListener('click', ()=>{
+  navberMenu.classList.toggle('open');
+});
+
+//Navbar 메뉴 클릭시 메뉴를 자동으로 닫아줌
+navberMenu.addEventListener('click', ()=>{
+  navberMenu.classList.remove('open');
+});
+
