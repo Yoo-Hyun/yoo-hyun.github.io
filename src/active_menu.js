@@ -1,3 +1,4 @@
+'use strict'
 const sectionIds = [
     '#home',
     '#about',
